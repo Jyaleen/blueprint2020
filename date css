@@ -1,0 +1,12 @@
+
+body {
+    background-color: rgb(255, 182, 255)
+}
+
+.body-content {
+    font-family: "Baloo", sans-serif;
+    font-size: 200px;
+    text-align: center;
+    padding: 50px;
+    color: white;
+}
