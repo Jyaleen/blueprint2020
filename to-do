@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>To Do List</title>
+        <link type="text/css" href="todo.css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=Baloo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="body-content">
+            <div class="title">To Do List</div>
+            <div class="to-do-list">Enter Items:
+                <ul class="to-do-list" id="list"></ul>
+                  <div class="in"> 
+                    <input class="user-input" id="input">
+                    <div class="button" id="add-input">Enter</div>
+                    <script type="text/javascript"> 
+                    document.getElementById("add-input").onclick = function() { 
+                        const node = document.createElement("li"); 
+                        const text = document.getElementById("input").value; 
+                        const textnode = document.createTextNode(text); 
+                        node.appendChild(textnode); 
+                        document.getElementById("list").appendChild(node); }
+                    </script>
+                  </div>
+            </div>
+        </div>
+    </body>
+</html>
