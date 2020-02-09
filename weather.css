@@ -1,0 +1,21 @@
+.body-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Baloo", sans-serif;
+    font-size: 70px;
+    padding: 40px;
+    margin-top: 50px;
+}
+
+body {
+    background-color: rgb(252, 247, 180);
+    color: rgb(175, 159, 247);
+
+}
+
+.home-icon img{
+    width: 200px;
+    border-radius: 100px;
+    margin-top: 30px;
+}

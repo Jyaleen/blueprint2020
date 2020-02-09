@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+   <head>
+       <title>•notes!</title>
+       <link rel="stylesheet" href="notepage.css">
+       <link href="https://fonts.googleapis.com/css?family=Baloo&display=swap" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+      
+      
+   </head>
+   <body>
+       <div class="everything">
+           <div class="notepage">
+               <h1 id="bigtitle">notes:
+                           <i style="font-size: 35px">a place to store your thoughts</h1> </i><br>
+                           <ul class="to-do-list" id="biglist" style="list-style-type:none"></ul>
+                           <div>
+                       <button class="styling" onclick="bold()">
+                               <b>B</b>
+                       </button>
+                           <button  class="styling" onclick="italic()">
+                             <i>I</i>
+                           </button>
+                           <button  class="styling" onclick="uline()">
+                           <u>U</u>
+                           </button>
+           </div>
+           <div class="notes">
+               <div class="inputbox">
+               <textarea  
+                   style="text-align: center"
+                   id="words"
+                   style="border:dotted 2px slategrey"
+                   placeholder="what do you want to say today?"
+                   rows="30"
+                   cols="60"></textarea>
+               </div></div>
+               <button id="submit">
+                   <div>ready to go? </div>
+            <div class="notesup">
+                   <script type="text/javascript">
+                                               document.getElementById("submit").onclick = function() {
+                                                   var node = document.createElement("li");
+                                                   var text = document.getElementById('words').value;
+                                                   var textnode = document.createTextNode(text);
+                                                   node.appendChild(textnode);
+                                                   document.getElementById("biglist").appendChild(node); }
+                                               </script></div>
+                                          
+                                             </div>
+                                             <div>
+                                                <a class = "home-icon" href="home page.html">
+                                                    <img src="https://i.ibb.co/t4Sfv0h/Screen-Shot-2020-02-09-at-2-04-35-PM.png">
+                                                </a>
+                                            </div>
+            </div>
+ 
+                           </button>
+                       </div>
+ 
+           <div class="list">
+           </div>
+       </div>
+       <script type="text/javascript" src="notepage.js"></script>
+   </body>
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+<!---->
+</html>

@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Time</title>
+        <link type="text/css" href="time.css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=Baloo&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="body-content">
+            <div id="time"></div>
+            <script type="text/javascript">
+                function GetTime() {
+                var d=new Date();
+
+                var nhour=d.getHours(),nmin=d.getMinutes(),ap;
+                if(nhour==0){ap=" AM";nhour=12;}
+                else if(nhour<12){ap=" AM";}
+                else if(nhour==12){ap=" PM";}
+                else if(nhour>12){ap=" PM";nhour-=12;}
+                    
+                if(nmin<=9) nmin="0"+nmin;
+
+                var time=""+nhour+":"+nmin+ap+"";
+                document.getElementById('time').innerHTML=time;
+            }
+            GetTime();
+            setInterval(GetTime,1000);
+            </script>
+             <div>
+                <a class = "home-icon" href="home page.html">
+                    <img src="https://i.ibb.co/t4Sfv0h/Screen-Shot-2020-02-09-at-2-04-35-PM.png">
+                </a>
+            </div>
+        </div>
+       
+    </body>
+</html>

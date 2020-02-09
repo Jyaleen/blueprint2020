@@ -1,0 +1,75 @@
+
+h1{
+    text-align: center;
+    font-family: cursive;
+    font-size: 50px;
+    font-family: "Baloo", sans-serif;
+    color: rosybrown;
+    padding: 30px;
+    animation : bounce 1.2s;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+
+}
+
+p{
+    text-align: center;
+    font-family: cursive;
+    font-size: 35px;
+    font-family: "Baloo", sans-serif;
+    color: rosybrown;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    
+}
+
+.body-content{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 50px;
+}
+
+.iconz {
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.iconz div {
+    display: inline-block;
+}
+
+.weather-icon {
+    width: 200px;
+    height: 200px;
+}
+
+.weather-icon img {
+    width: 200px;
+    animation : bounce 1.7s;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    30% { transform: translateY(-50px); }
+    100% { transform: translateY(0); }
+}
+
+.navigation-text {
+    animation : bounce 1.5s;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+}
+
