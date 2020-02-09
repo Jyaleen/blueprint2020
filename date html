@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Home</title>
+            <link type="text/css" href="date.css" rel="stylesheet"/>
+            <link href="https://fonts.googleapis.com/css?family=Baloo&display=swap" rel="stylesheet">
+        </head>
+        <body>
+            <div class="body-content">
+                <div class="date"> 
+                    <div id="date"></div>
+                    <script type="text/javascript">
+                    var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+                    function GetDate() {
+                        var d=new Date();
+                        var nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+
+                        var nhour=d.getHours(),nmin=d.getMinutes(),ap;
+                        if(nhour==0){ap=" AM";nhour=12;}
+                        else if(nhour<12){ap=" AM";}
+                        else if(nhour==12){ap=" PM";}
+                        else if(nhour>12){ap=" PM";nhour-=12;}
+                    
+                        if(nmin<=9) nmin="0"+nmin;
+
+                        var date=""+tmonth[nmonth]+" "+ndate+", "+nyear+"";
+                        document.getElementById('date').innerHTML=date;
+                        
+                    }
+                    GetDate();
+                    setInterval(GetDate,1000);
+                    </script>
+                </div>
+            </div>
+            <script src="projcode.js"> </script>
+        </body>
+    </html>
